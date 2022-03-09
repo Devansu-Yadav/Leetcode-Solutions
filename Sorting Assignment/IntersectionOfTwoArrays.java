@@ -1,5 +1,6 @@
 // Problem:- https://leetcode.com/problems/intersection-of-two-arrays/
 // My Solution for the second variation of this ques - https://leetcode.com/submissions/detail/566200525/
+// External Sorting concept video for Follow-up question in (https://leetcode.com/problems/intersection-of-two-arrays-ii/) - https://www.youtube.com/watch?v=Bp7fGofslng
 
 import java.util.Arrays;
 import java.util.Set;
