@@ -37,4 +37,33 @@ class RemoveDuplicatesFromSortedList2 {
         }
         return dummy.next;
     }
+    
+    // T.C: O(N), Space Complexity: O(1)
+    // Different approach: We keep a track of the last non-duplicate node by tracking previous 
+    // and current node
+    public static ListNode removeDuplicates(ListNode head) {
+        if(head == null) {
+            return head;
+        }
+
+        ListNode dummyNode = new ListNode(101, head);
+        ListNode i = dummyNode, prev = dummyNode;
+        ListNode curr = head;
+
+        while(curr != null) {
+            while(curr != null && ((curr.next != null && curr.val == curr.next.val) || curr.val == prev.val)) {
+                prev = curr;
+                curr = curr.next;
+            }
+
+            i.next = curr;
+            i = i.next;
+            prev = curr;
+
+            if(curr != null) {
+                curr = curr.next;
+            }
+        }
+        return dummyNode.next;
+    }
 }
