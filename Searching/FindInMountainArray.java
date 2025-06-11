@@ -1,3 +1,8 @@
+interface MountainArray {
+ public int get(int index);
+ public int length();
+}
+
 public class FindInMountainArray {
     public int findInMountainArray(int target, MountainArray mountainArr) {
         int peakElementIndex = findPeakElement(mountainArr);
