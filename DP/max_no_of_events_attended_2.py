@@ -1,4 +1,5 @@
 # link to problem: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/description/?envType=daily-question&envId=2025-07-08
+# Solution explanation: https://youtu.be/C3r4OTOmfaI?si=b9tKZKqckFgAqgKY
 # TC: Using plain Recursion and binary search: O(2^n * log(n))
 # TC: Using DP and binary search: O(n*k*log(n)), SC: O(n*k)
 
